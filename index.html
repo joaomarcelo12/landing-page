@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="nav-mobile" id="my-nav">
+    <div class="menu-mobile">
+      <a href="#" class="link-menu-mobile">About</a>
+      <a href="#" class="link-menu-mobile">Careers</a>
+      <a href="#" class="link-menu-mobile">Events</a>
+      <a href="#" class="link-menu-mobile">Products</a>
+      <a href="#" class="link-menu-mobile">Support</a>
+    </div>
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+  </div>
+
+  <header class="cabecalho">
+    <div class="logo-menu">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <button class="open-btn" onclick="openNav()"></button>
+      <div class="menu">
+        <span class="info">About</span>
+        <span class="info">Careers</span>
+        <span class="info">Events</span>
+        <span class="info">Products</span>
+        <span class="info">Support</span>
+      </div>
+    </div>
+    <div class="texto-cabecalho">
+      <div class="texto">
+        <span>Immersive experiences that deliver</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <div class="apresentacao">
+      <img src="./images/desktop/image-interactive.jpg" alt="image-interactive" class="image-interactive">
+      <div class="texto-apresentacao">
+        <h1>The leader in interactive VR</h1>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
+    </div>
+
+    <div class="header-criacoes">
+      <div class="criacoes">
+        <span class="our-creations">Our creations</span>
+        <button id="see-all">See all</button>
+      </div>
+    </div>
+
+    <div class="imagens">
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/desktop/image-deep-earth.jpg" alt="deep-earth" class="desktop">
+          <img src="./images/mobile/image-deep-earth.jpg" class="mobile">
+          <span class="card-description">Deep<br>earth</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-night-arcade.jpg" alt="image-night-arcade" class="desktop">
+          <img src="./images/mobile/image-night-arcade.jpg" class="mobile">
+          <span class="card-description">Night<br>arcade</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-soccer-team.jpg" alt="image-soccer-team" class="desktop">
+          <img src="./images/mobile/image-soccer-team.jpg" class="mobile">
+          <span class="card-description">Soccer<br>team VR</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-grid.jpg" alt="grid" class="desktop">
+          <img src="./images/mobile/image-grid.jpg" class="mobile">
+          <span class="card-description">The<br>grid</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-from-above.jpg" alt="image-from-above" class="desktop">
+          <img src="./images/mobile/image-from-above.jpg" class="mobile">
+          <span class="card-description">From up<br>above VR</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-pocket-borealis.jpg" alt="image-pocket-borealis" class="desktop">
+          <img src="./images/mobile/image-pocket-borealis.jpg" class="mobile">
+          <span class="card-description">Pocket<br>borealis</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-curiosity.jpg" alt="image-curiosity" class="desktop">
+          <img src="./images/mobile/image-curiosity.jpg" class="mobile">
+          <span class="card-description">The<br>curiosity</span>
+        </div>
+        <div class="card">
+          <img src="./images/desktop/image-fisheye.jpg" alt="image-fisheye" class="desktop">
+          <img src="./images/mobile/image-fisheye.jpg" class="mobile">
+          <span class="card-description">Make it<br>fisheye</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-contain">
+      <div class="logo-footer-icons">
+        <img src="./images/logo.svg" alt="logo-footer">
+        <div class="icons">
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+        </div>
+      </div>
+    </div>
+    <div class="info-footer">
+      <div class="info-footer-contain">
+        <div class="info-contain">
+          <span class="info">About</span>
+          <span class="info">Careers</span>
+          <span class="info">Events</span>
+          <span class="info">Products</span>
+          <span class="info">Support</span>
+        </div>
+        <span class="copy">© 2021 Loopstudios. All rights reserved.</span>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">John M</a>.
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
